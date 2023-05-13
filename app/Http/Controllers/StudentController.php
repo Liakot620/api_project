@@ -35,7 +35,6 @@ class StudentController extends Controller
             'city'  =>'required',
             'fees'  =>'required',
         ]);
-     
         return Student::create($request->all());
     }
 
