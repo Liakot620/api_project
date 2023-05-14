@@ -9,6 +9,12 @@ use App\Models\Student;
 
 class StudentController extends Controller
 {
+    public function view()
+    {
+       // $students =Student::all();
+       $students= Student::all();
+        return view('welcome',['students'=>$students]);
+    }
     /**
      * Display a listing of the resource.
      */

@@ -13,6 +13,17 @@
        
     </head>
     <body class="antialiased">
-        <h1>laravel api text</h1>
+        <h1>student view</h1>
+        <hr>
+        @foreach($students as $stu)
+        <h4>
+        {{$stu->id}}
+        {{$stu->name}}
+        {{$stu->city}}
+        {{$stu->fees}}
+        {{$stu->updated_at}}
+        </h4>
+        <br>
+        @endforeach
     </body>
 </html>
