@@ -17,13 +17,13 @@
         <hr>
         @foreach($students as $stu)
         <h4>
-        {{$stu->id}}
-        {{$stu->name}}
-        {{$stu->city}}
-        {{$stu->fees}}
-        {{$stu->updated_at}}
+       ID: {{$stu->id}} ,
+       Name:{{$stu->name}} ,
+       City:{{$stu->city}} ,
+       Fees: {{$stu->fees}}
         </h4>
         <br>
         @endforeach
+        <h5>cope @right by liakot</h5>
     </body>
 </html>

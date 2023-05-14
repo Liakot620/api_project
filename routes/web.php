@@ -11,4 +11,4 @@ use App\Http\Controllers\StudentController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/view',[StudentController::class,'view']);
+Route::get('/',[StudentController::class,'view']);
